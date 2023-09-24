@@ -1,5 +1,6 @@
 :root{
     --primary-color:#612674;
+    --default-gap: 1rem;
 }
 
 html{
@@ -164,3 +165,61 @@ html{
         text-shadow: 4px 4px 2px rgb(0 0 0 / 0.4);
     }
 }
+
+.middle-content{
+    background-color: #f6f6f6;
+    text-align: center;
+    padding: 2em;
+}
+
+.middle-content a{
+    color: inherit;
+    text-decoration: none;
+}
+
+.middle-content-title{
+    color: var(--primary-color);
+    text-transform: uppercase;
+    font-size: 1.25em;
+}
+
+.middle-content span[class^="icon-"]{
+    color: var(--primary-color);
+    font-size: 3.5em;
+}
+
+.middle-content p{
+    line-height: 1.5;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--default-gap);
+}
+
+.col{
+    flex: 1 0 auto;
+    width: 100%;
+}
+
+.col-sm-12{
+    width: 100%;
+}
+
+@media screen and (min-width: 48.75em) {
+    .col-md-6 {
+        width: calc(50% - var(--default-gap));
+    }
+}
+
+@media screen and (min-width: 74em) {
+    .col-xl-3 {
+        width: calc(25% - var(--default-gap));
+    }
+
+    .col-xl-6 {
+        width: calc(50% - var(--default-gap));
+    }
+}
+
