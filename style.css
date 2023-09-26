@@ -207,7 +207,7 @@ html{
     width: 100%;
 }
 
-@media screen and (min-width: 48.75em) {
+/* @media screen and (min-width: 48.75em) {
     .col-md-6 {
         width: calc(50% - var(--default-gap));
     }
@@ -221,5 +221,5 @@ html{
     .col-xl-6 {
         width: calc(50% - var(--default-gap));
     }
-}
+} */
 
